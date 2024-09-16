@@ -1,0 +1,38 @@
+.tabela{
+    overflow-x: auto;
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+}
+
+table caption{
+    margin: 5px;
+    caption-side: bottom;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+}
+
+table th{
+    background-color: #3d3b3b;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+table td{
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+tfoot td{
+    background-color: #525151;
+    color: #fff;
+    text-align: center;
+}
+
+.celula_c{
+    text-align: center;
+}

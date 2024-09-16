@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML para texto</title>
+    <style>
+        t {
+            color: magenta
+        }
+
+        rf {
+            color: green;
+        }
+
+        as {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags HTML para texto</h1>
+    <p>
+        No Html, tags podem conter outras tags, Mas pra isso é preciso entender a diferença
+        entre "block" e "InLine".
+    </p>
+    <h2>Block e InLine</h2>
+    <p>
+        No HTML, os elementos podem ser classificados como block ou inline, e cada um tem
+        um comportamento visual distinto:
+    </p>
+    <h3>Elementos Block</h3>
+    <p>
+        - <b>Comportamento:</b> Ocupam toda a largura disponível e sempre começam em uma nova linha.
+        <br>
+        <br>
+        - <b>Exemplos:</b> <<t> div </t>>, <<t> h1 </t>> - <<t> h6 </t>>, <<t> p </t>>, 
+        <<t> blockquote </t>>, <<t> ul </t>>, <<t> ol </t>>, <<t> form </t>>.
+        <br>
+        <br>
+        - <b>Uso:</b> São usados para criar seções maiores e estruturais na página.
+        <br>
+        <br>
+    </p>
+    <h3>Elementos InLine</h3>
+    <p>
+        - <b>Comportamento:</b> Ocupam apenas o espaço necessário e não iniciam uma nova linha.
+        <br>
+        <br>
+        - <b>Exemplos:</b> span, a, img, strong, em.
+        <br>
+        <br>
+        - <b>Uso:</b> São usados para estilizar partes menores do conteúdo dentro de elementos block.
+        <br>
+        <br>
+    </p>
+    <h3>Diferença Principal</h3>
+    <p>
+        - <b>Block:</b> Elementos block são empilhados verticalmente, um abaixo do outro.
+        <br>
+        <br>
+        - <b>Inline:</b> Elementos inline são dispostos horizontalmente, lado a lado, dentro
+        de um elemento block.
+        <br>
+        <br>
+    </p>
+    <h2>Tag <<t> b </t>> (bolt) e <<t> strong </t>></h2>
+    <P>
+        - <b><<t> b </t>> (bolt):</b> destaca uma palavra ou texto visualmente em negrito.  Não tem 
+        significado extra ao texto(semantica), é puramente estético. <br>
+        Ex: <br>
+        <b>eu estou em negrito.</b>
+        <br>
+        <br>
+        - <b><<t> strong </t>>:</b> deixa uma palavra ou texto mais forte. Adiciona significado ao 
+        texto, indicando que ele é importante, sério ou urgente.<br>
+        Ex: <br>
+        <strong>Eu tenho mais importancia.</strong>
+        <br>
+        <br>
+    </P>
+    <h3>Diferença principal</h3>
+    <p>
+        - <b>Visual:</b> Ambos são renderizados em negrito por padrão.
+        <br>
+        <br>
+        - <b>Semântica:</b> <<t> b </t>> é para destaque visual sem importância adicional, 
+        enquanto <<t> strong </t>> indica que o texto é de grande importância.
+        <br>
+        <br>
+        <br>
+    </p>
+    <h2><<t> i </t>> (italic)  e <<t> em </t>> (emphasis)</h2>
+    <p>
+        - <b><<t> i </t>> (italic): </b> Utilizada para destacar texto que deve ser diferenciado 
+        do restante, como termos técnicos, expressões em outros idiomas ou pensamentos 
+        de personagens fictícios. Não adiciona significado extra (semantica), é 
+        puramente estético. <br>
+        Ex: <br>
+        <i>Eu estou em italico.</i>
+        <br>
+        <br>
+        - <b><<t> em </t>> (emphasis):</b> Utilizada para indicar que o texto tem ênfase. Adiciona 
+        significado ao texto, indicando que ele é importante ou deve ser lido 
+        com ênfase. <br>
+        Ex: <br>
+        <em>Eu tenho ênfase.</em>
+        <br>
+        <br>
+    </p>
+    <h3>Diferença principal</h3>
+    <p>
+        - <b>Visual:</b> Ambos são renderizados em itálico por padrão. <br>
+        <br>
+        - <b>Semântica:</b> <<t> i </t>> é para destaque visual sem importância adicional, 
+        enquanto <<t> em </t>> indica que o texto é enfatizado e tem um significado importante.
+        <br>
+        <br>
+    </p>
+    <h2> Tag <<t>a</t> <rf><i>href</i></rf> <t>=</t> <as>""</as>> </h2>
+    <p>
+        A tag <<t>a</t> <rf><i>href</i></rf> <t>=</t> <as>""</as>> referencia um link ou um arquivo. <br>
+        Ex:
+        <br>
+        <a href="https://www.google.com/">Eu tenho um link do google</a>
+    </p>
+    <h3><i><rf>target</rf><t>=</t></i>""</h3>
+    <p>
+        Com o <i><rf>target</rf><t>=</t></i> pode alterar a forma como a referencia do <<t> a </t>> será
+        aberta. <br>
+    </p>
+    <h4><as>"_blank"</as></h4>
+    <p>
+        Abre a referencia em uma outra aba. <br>
+        Ex: <br>
+        <a href="https://www.google.com/" target="_blank">Eu tenho um link do google</a> <br>
+    </p>
+    <h2>tag <<t> img </t><i><rf>src</rf></i><t>=</t><as>""</as> </t><i><rf>alt</rf><t>=</t><as>""</as>></h2>
+    <p>
+        A tag img é ultilizada para adicionar uma imagem ao texto. Essa tag possui dois argumentos padrôes. 
+        Sendo eles o <i><rf>src</rf></i><t>=</t><as>""</as> onde de referencia a imagem, e o 
+        <i><rf>alt</rf><t>=</t><as>""</as> onde se descreve a imagem. Essa descrição é muito importante para 
+         leitores de tela. <br>
+         Ex:
+         <br>
+         <img src="
+         https://img.freepik.com/vetores-gratis/gato-bonito-sentado-ilustracao-em-vetor-icone-dos-desenhos-
+         animados-conceito-de-icone-de-natureza-animal-isolado-de-vetor-premium-estilo-de-desenho-animado-
+         plano_138676-4148.jpg
+         " alt="Ilustração de uma gatinho amarelo fofo" width="100" height="100">
+         <br>
+         E possivel usar o <i><rf>width</rf></i> e o <i><rf>height</rf></i> para alterar o tamanho da imagem.
+    </p>
+    <h2> Del e ins</h2>
+    <p>
+        Del (delet) faz uma retificação e o ins (insert) incere uma nova informação. <br>
+        Ex: <br>
+        <del>erro</del> <br>
+        <ins> correção </ins>
+    </p>
+    <h2>s e u</h2>
+    <p>
+        Sao parecisodos com o del e o ins, porem nao sao semanticos, apenas visual. <br>
+        Ex:
+        <br>
+        <s>riscado</s> <br>
+        <u>sublinhado</u>
+    </p>
+    <h2>Big e small</h2>
+    <p>
+        Alteram o tamanho. <br>
+        Ex:
+        <br>
+        grande ->  <big>grande</big>
+        <br>
+        pequeno  ->  <small>pequeno</small>
+    </p>
+    <h2>Sub e Sup</h2>
+    <p>
+        Elevam ou abaixam uma letra ou palavra. <br>
+        Ex:
+        <br>
+        2 <sup>2</sup>
+        <br>
+        H <sub>2</sub>O
+    </p>
+    <h2>Br</h2>
+    <p>Faz quebra de linha</p>
+    <h2>q</h2>
+    <p>
+        A tag q é utilizada para fazer citação e carregar  a fonte da mesma. <br>
+        Ex:
+        <br>
+        <q cite="a fonte">isso aqui é uma citação.</q>
+    </p>
+    <h2>blockquote</h2>
+    <p>
+        O blockquote, assim como o q, ele é usado para fazer uma citaçõa, Porem, ele cria um bloco para 
+        isso. Entao nao pode ser usado dentro de um p, mas pode conter um p. <br>
+        Ex:
+    </p>
+    <blockquote cite="essa é a fonte">
+        Isso aqui é um bloco inteiro para se fazer uma citação. aqui se poder ter uma citação bem grande.
+        <p>
+            Isso aqui esta dentro de um p contido dentro do blockquote.
+        </p>
+    </blockquote>
+    <h2>Tag code</h2>
+    <p>
+        Usado para espreçar codigos dentro de textos <br>
+        Ex:
+        <br>
+        <code>
+           console.log('ola mundo')
+        </code>
+    </p>
+    <h2>Tag pre</h2>
+    <p>
+        tag q mantem a preformatação de um texto. <br>
+        ex:
+    </p>
+    <pre>
+        isso é um texto pre formatadao kkk m     
+
+         ele mantem  os     espaços     ...
+                    ele respeita
+
+
+            toda e qualque formatação 
+    </pre>
+    <h2>Tag div e span</h2>
+    <p>
+        As tags div e span sao conteiners. Sendo a div um block e a span InLine 
+    </p>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="explicação">
+
+        <h1>Tabelas</h1>
+        <P>
+            Para a criação de tabelas, no Html, é usado a tag Table. <br> A table pode
+            ser dividida, assim com o proprio html, em head, bady e foot . Cada um com 
+            sua tag semantica sendo thead, tbody e tfoot respectitivamente. <br>Ha tambem 
+            as tags filhos para a criação das linhas (tr), e as celulas (th e td). E a tag 
+            para descrição da tabela.
+        </P>
+
+    </div>
+
+    <div class="tabela">
+
+        <table>
+
+            <caption class="descrição">Descrição: Uma tabela.</caption>
+
+            <thead>
+                <tr class="linha">
+
+                    <th class="celula">Titulo 1</th>
+                    <th class="celula">Titulo 2</th>
+                    <th class="celula">Titulo 3</th>
+                    <th class="celula">Titulo 4</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="linha">
+
+                    <td class="celula">corpo 1</td>
+                    <td class="celula">corpo 2</td>
+                    <td class="celula">corpo 3</td>
+                    <td class="celula">corpo 4</td>
+
+                </tr>
+
+                <tr class="linha">
+
+                    <td class="celula_c" colspan="2">corpo 1 e 2</td>
+                    
+                    <td class="celula">corpo 3</td>
+                    <td class="celula">corpo 4</td>
+                    
+                </tr>
+
+                <tr class="linha">
+
+                    <td class="celula">corpo 1</td>
+                    <td class="celula">corpo 2</td>
+                    <td class="celula">corpo 3</td>
+                    <td class="celula_c" rowspan="2">2 corpos 4</td>
+                    
+                </tr>
+
+                <tr class="linha">
+
+                    <td class="celula">corpo 1</td>
+                    <td class="celula">corpo 2</td>
+                    <td class="celula">corpo 3</td>
+                    
+                    
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr class="linha">
+
+                    <td class="celula">total</td>
+                    <td class="celula">total</td>
+                    <td class="celula">total</td>
+                    <td class="celula">total</td>
+                    
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
