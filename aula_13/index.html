@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios e Input part. 2</title>
+</head>
+<body>
+    <form action="#">
+
+        <h1>Formulario</h1>
+
+        <div class="lable" id="box">
+            <h3>Formas de uso da lablel no input</h3>
+
+            <vid class="1">
+                <h4>vinculo via for=""</h4>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </vid>
+
+            <div class="2">
+                <h4>Vinculo via encapsulamento</h4>
+                <label>
+                    Nome: 
+                    <input type="text" id="nome" name="nome" value="Este é o valor desse input">
+                </label>
+            </div>
+
+        </div>
+
+        <div class="checkbox-radio" id="box">
+
+            <div class="checkbox">
+                <h4>Checkbox</h4>
+                <label> voçê é um dev ?
+                     <input type="checkbox"> sim
+                </label>
+            </div>
+
+            <div class="radio">
+                <h4>Radio</h4>
+                <P>Escolha um numero</P>
+                <label>
+                    1
+                     <input type="radio" id="1" name="num">  
+                </label>
+                <label>
+                    2
+                     <input type="radio" id="2" name="num">  
+                </label> <label>
+                    3
+                     <input type="radio" id="3" name="num">  
+                </label>
+                <label>
+                    4
+                     <input type="radio" id="4" name="num">  
+                </label>
+                <label>
+                    5
+                     <input type="radio" id="5" name="num">  
+                </label>
+                <p>
+                    No radio, o parametro "name=" agrupa os inputs, permitindo um 
+                    unico valor de retorno (uma unica escolha)
+                </p>
+
+            </div>
+            
+        </div>
+
+        <div class="botoes" id="box">
+
+            <h3>Tipos de botões</h3>
+            <p>
+                o Reset faz oq o propiro nome diz, e o submit envia os 
+                dados coletados pelo formulario prara a banco de dados 
+                descrito no action"" da tag form.
+            </p>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+
+        </div>
+    </form>
+</body>
+</html>
