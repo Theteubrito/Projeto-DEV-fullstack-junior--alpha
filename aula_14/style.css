@@ -1,0 +1,11 @@
+#box, #box2 {
+    background-color: aliceblue;
+    margin: 5px;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label{
+    cursor: pointer;
+}

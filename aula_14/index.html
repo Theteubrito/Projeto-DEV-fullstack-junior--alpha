@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios e Input part. 3</title>
+</head>
+
+<body>
+
+    <form action="#">
+        <h1>Formulario</h1>
+
+        <div class="Data e Hora" id="box">
+
+            <h3>inputs de Data e Hora</h3>
+
+            <div class="1" id="box2">
+                <h4>Data</h4>
+                <label>
+                    Data:
+                    <input type="date" id="data" name="data" value="2024-09-17">
+                </label>
+            </div>
+
+            <div class="2" id="box2">
+                <h4>Data e Hora</h4>
+                <p>
+                    O datetime nao é suportado pela maioria dos navegadores.
+                    Por isso ele nao é mostrado corretamente.
+                </p>
+                <label>
+                    Data e Hora:
+                    <input type="datetime" id="datahora" name="datahora" value="2024-09-17">
+                </label>
+            </div>
+
+            <div class="3" id="box2">
+                <h4>Data e hora Local</h4>
+                <p>
+                    O dateTime-local é a solução para o datetime.
+                </p>
+                <label>
+                    Data e Hora:
+                    <input type="datetime-local" id="datahoral" name="datahoral" value="2024-09-17T12:14">
+                </label>
+            </div>
+
+            <div class="4" id="box2">
+                <h4>Hora</h4>
+                <label>
+                    Hora:
+                    <input type="time" id="time" name="time" value="12:14:30">
+                </label>
+            </div>
+
+
+        </div>
+
+        <div class="email" id="box">
+            <h4>Email</h4>
+            <label for="email">Email:</label>
+            <input type="email" class="email" name="Email" placeholder="Email.">
+        </div>
+
+        <div class="color" id="box">
+            <h4>Cor</h4>
+            <label for="color">Qual sua cor favorita? </label>
+            <input type="color" id="color" name="color" value="#0000ff">
+        </div>
+
+        <div class="file" id="box">
+
+            <h4>Arquivos</h4>
+            <label>
+                escolha um arquivo:
+                <input type="file" id="file" name="file">
+            </label>
+
+            <p>
+                O input arquivo pode ter o seu tipo de arquivo
+                especificado atraves do paramentro accept="" usando
+                uma extencao especifica como por exemplo : .png, .jpeg <br>
+                Ou com uma extencao universal como "image/*".
+            </p>
+
+            <label>
+                Escolha uma imagem:
+                <input type="file" accept="image/*">
+            </label>
+
+        </div>
+
+        <div class="number" id="box">
+            <h4>Numeros</h4>
+            <p>
+                no Input type="number" pode se definir um numero minimo e 
+                um maximo com o uso do min="" max="". <br>
+                E com o step="" a quantidades de numeros q sera acrecentado 
+                ou diminuido com o controle manual (as setinhas).
+            </p>
+            <label>
+                digite um numero
+                <input type="number" name="number" id="number" placeholder="10" min="10" max="50" step="5">
+            </label>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
