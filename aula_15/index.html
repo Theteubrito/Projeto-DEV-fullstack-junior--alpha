@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios e Input part. 4</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+
+    <form action="#">
+
+        <div class="senha" id="box2">
+            <h2>Senha</h2>
+            <label for="passward">Senha: </label>
+            <input type="password" id="passward" name="passward" placeholder="*****">
+        </div>
+
+        <div class="barra" id="box">
+
+            <h2>Range</h2>
+
+            <div class="1" id="box2">
+                <p>
+                    O input range pode receber os paramentros: min="", max="" e step="".
+                </p>
+                <label>
+                    0
+                    <input type="range" id="range" name="range" min="0" max="10" step="2">
+                    10
+                </label>
+            </div>
+
+            <div class="2" id="box2">
+                <p>
+                    Pode ser vinculado tambem, a um datalist
+                </p>
+                <label>
+                    0%
+                    <input type="range" id="range" name="range" list="datalist">
+                    100%
+                </label>
+
+                <datalist id="datalist">
+                    <option value="0" label="0%">
+                    <option value="10">
+                    <option value="20">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50" label="50%">
+                    <option value="60">
+                    <option value="70">
+                    <option value="80">
+                    <option value="90">
+                    <option value="100" label="100%">
+                </datalist>
+
+                <p>
+                    É possivel notar q o parametro label da tag opition nao funciona. 
+                    Isso acontece na maioria dos navegadores.
+                </p>
+
+            </div>
+
+            <div class="3" id="box2">
+                <p>
+                    um codigo adicional para range
+                </p>
+                <input type="range" name="Lrange" id="Crange" min="0" max="10" oninput="Lval.innerHTML = Number(Crange.value)">
+                <output id="Lval">5</output>
+            </div>
+
+        </div>
+
+        <div class="url" id="box">
+            <h2>URL</h2>
+            <label for="url">URL: </label>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </div>
+
+        <div class="busca" id="box">
+            <h2>Busca</h2>
+            <label>
+                Pesquisa: 
+                <input type="search" id="search" name="search" placeholder="search">
+            </label>
+        </div>
+        <p>As duas ultimas tags q serao demonstradas nao sao input</p>
+
+        <div class="select" id="box1">
+            <h2>Select</h2>
+
+            <div class="1" id="box3">
+                <label for="select"> Selecione algum valor: </label>
+                <select name="" id="select" name="select">
+                    <option value="0" label="Selesione" disabled selected>
+                    <option value="1" label="Valor 01">
+                    <option value="2" label="Valor 02">
+                    <option value="3" label="Valor 03">
+                    <option value="4" label="Valor 04">
+                </select>
+            </div>
+
+            <div class="2" id="box3">
+                <p>É possivel criar prupos</p>
+
+                <label for="select"> Selecione algum valor: </label>
+                <select name="" id="select" name="select">
+
+                    <option value="0" label="Selesione" disabled selected>
+                    <optgroup label="1 ate 2">
+                        <option value="1" label="Valor 01">
+                        <option value="2" label="Valor 02">
+                    </optgroup>
+                    <optgroup label="3 ate 4">
+                        <option value="3" label="Valor 03">
+                        <option value="4" label="Valor 04">
+                    </optgroup>
+                    <optgroup label="5 ate 6">
+                        <option value="5" label="Valor 05">
+                        <option value="6" label="Valor 06">
+                    </optgroup>
+
+                </select>
+            </div>
+        </div>
+
+        <div class="texxtarea" id="box1">
+            <h2>Area de texto</h2>
+            <p>A tag textarea pode receber um rows="" e cols="".</p>
+
+            <label for="comentario"> Deixe seu comentário: </label>
+            <textarea name="comentario" id="comentario" rows="5" cols="20">
+
+            </textarea>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
