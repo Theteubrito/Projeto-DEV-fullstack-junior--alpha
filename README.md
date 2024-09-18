@@ -2,7 +2,7 @@
 Neste repositorio estão os frutos dos meus estudos em HTML5 e CSS3.
 Com isso pretendo postar meu progreço em me tornar um desenvolvedor full Stack.
 
-### Esse porjeto tera 4 fases e 3 estajos, sendo elas:
+### Esse porjeto tera 3 fases e 4 estagios, sendo elas:
 
 >Fase 1 onde aprenderei e me desenvolverie como front-end basico.
 * init - git e github;
