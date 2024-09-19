@@ -4,7 +4,7 @@
 Neste repositorio estão os frutos dos meus estudos em HTML5 e CSS3.
 Com isso pretendo postar meu progreço em me tornar um desenvolvedor full Stack.
 
-## Esse porjeto terá 3 fases e 3 estágios, sendo elas:
+## Esse projeto terá 3 fases e 3 estágios, sendo elas:
 
 > ### Fase 1 onde aprenderei e me desenvolverie como front-end basico
 
