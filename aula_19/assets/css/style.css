@@ -1,0 +1,33 @@
+
+body{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+div{
+    margin: 5px;
+    padding: 10px;
+    border: solid 1px white;
+}
+
+
+/*Seletor de irmãos*/
+
+/*Adjacent sibling selector*/
+.pai1 h2+p{ /*vai selecionar todo <p> q venha apos um <h2>*/
+    color: red;
+}
+
+.pai1 p+h2{
+    color: yellowgreen;
+}
+
+/*General sibling selector*/
+.pai2 h2~p{ /* será aplicado a TODOS os <p> q existirem apos um <2>*/
+    color: violet;
+}
+
+/*seletot de atributos*/
+[um-atributo]{
+    color: blue;
+}
