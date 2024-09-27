@@ -1,0 +1,14 @@
+.hover{
+    transition: all 0.5s ease-in-out;
+}
+.hover:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: firebrick;
+}
