@@ -1,0 +1,17 @@
+div{
+    border: solid 1px black;
+    padding: 5px;
+    margin: 10px;
+}
+
+input:checked + p{
+    background: palevioletred;
+}
+input:not(:checked) + p{
+    background-color: yellow;
+}
+
+.menos p:not(.meio){
+    color: blue;
+}
+

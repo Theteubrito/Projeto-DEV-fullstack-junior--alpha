@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Pseldo classe :not()</title>
+</head>
+
+<body>
+    <h1>Pseldo classe :not()</h1>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/:not">MDN</a>
+
+    <div class="input">
+        <h2>Condição</h2>
+        <h3>input:not(:checked) + p{ background-color: yellow; }</h3>
+        <h3>input:checked + p{ background-color: palevioletre; }</h3>
+        <input type="checkbox" name="input" id="input">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nesciunt accusamus reprehenderit voluptas
+            eveniet dolorem ratione, aspernatur consequuntur alias harum fugit odit possimus laborum voluptates earum
+            veniam totam ab facere.
+        </p>
+    </div>
+
+    <div class="menos">
+        <h2>esclusão</h2>
+        <h3>p:not(.meio)</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias vitae provident similique fuga beatae quis
+            dignissimos dolores libero officia architecto eveniet quae est totam ipsam, odit, quam dicta deserunt nemo?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias vitae provident similique fuga beatae quis
+            dignissimos dolores libero officia architecto eveniet quae est totam ipsam, odit, quam dicta deserunt nemo?
+        </p>
+        <p class="meio">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias vitae provident similique fuga beatae quis
+            dignissimos dolores libero officia architecto eveniet quae est totam ipsam, odit, quam dicta deserunt nemo?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias vitae provident similique fuga beatae quis
+            dignissimos dolores libero officia architecto eveniet quae est totam ipsam, odit, quam dicta deserunt nemo?
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias vitae provident similique fuga beatae quis
+            dignissimos dolores libero officia architecto eveniet quae est totam ipsam, odit, quam dicta deserunt nemo?
+        </p>
+    </div>
+</body>
+
+</html>
